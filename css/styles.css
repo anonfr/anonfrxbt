@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Darker background */
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px; /* Increased padding */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 0; /* Align nav to the top */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    display: inline-block; /* Allow cat icon to be on the same line */
+}
+
+.cat-icon {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.friends {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.friends a {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+a {
+    color: #ff69b4;
+}
+
+/* Adjust link colors */
+a[href^="https://github.com"] {
+    color: #ff69b4;
+}
+
+.crypto-donations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.crypto-option {
+    text-align: center;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.qr-code {
+    max-width: 150px;
+    height: auto;
+}
+
+.crypto-address {
+    word-break: break-all;
+    font-size: 0.9em;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px; /* Make room for the copy icon */
+}
+
+.copy-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+.crypto-address:hover {
+    text-decoration: underline;
+}
+
+.crypto-address:active {
+    opacity: 0.8;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .qr-code {
+        display: none;
+    }
+
+    .crypto-option {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .crypto-address {
+        font-size: 1.1em; /* Increased from 1em for mobile */
+    }
+}
+
+/* PC styles */
+@media (min-width: 769px) {
+    .crypto-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crypto-address {
+        font-size: 1em; /* Increased from 0.9em for PC */
+    }
+}
+
+.support-section {
+    background-color: #000000;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.support-toggle {
+    background-color: #000000;
+    color: #ff69b4;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.support-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.support-section.active .support-content {
+    max-height: 1000px; /* Adjust this value based on your content */
+}
+
+.support-section.active .toggle-icon {
+    transform: rotate(45deg);
+}
