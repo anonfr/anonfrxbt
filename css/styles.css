@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000; /* Darker background */
+    background-color: #000000; 
     color: #ffffff;
     line-height: 1.6;
     margin: 0;
-    padding: 40px; /* Increased padding */
+    padding: 40px; 
     max-width: 800px;
     margin: 0 auto;
 }
@@ -17,7 +17,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: right;
-    margin-top: 0; /* Align nav to the top */
+    margin-top: 0; 
 }
 
 nav ul li {
@@ -33,7 +33,7 @@ nav ul li a {
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    display: inline-block; /* Allow cat icon to be on the same line */
+    display: inline-block;
 }
 
 .cat-icon {
@@ -107,7 +107,7 @@ a[href^="https://github.com"] {
     margin-top: 10px;
     cursor: pointer;
     position: relative;
-    padding-right: 25px; /* Make room for the copy icon */
+    padding-right: 25px; 
 }
 
 .copy-icon {
@@ -126,7 +126,7 @@ a[href^="https://github.com"] {
     opacity: 0.8;
 }
 
-/* Mobile styles */
+
 @media (max-width: 768px) {
     .qr-code {
         display: none;
@@ -138,11 +138,11 @@ a[href^="https://github.com"] {
     }
 
     .crypto-address {
-        font-size: 1.1em; /* Increased from 1em for mobile */
+        font-size: 1.1em; 
     }
 }
 
-/* PC styles */
+
 @media (min-width: 769px) {
     .crypto-option {
         display: flex;
@@ -151,7 +151,7 @@ a[href^="https://github.com"] {
     }
 
     .crypto-address {
-        font-size: 1em; /* Increased from 0.9em for PC */
+        font-size: 1em; 
     }
 }
 
@@ -184,7 +184,7 @@ a[href^="https://github.com"] {
 }
 
 .support-section.active .support-content {
-    max-height: 1000px; /* Adjust this value based on your content */
+    max-height: 1000px;
 }
 
 .support-section.active .toggle-icon {
@@ -192,5 +192,5 @@ a[href^="https://github.com"] {
 }
 
 ul li strong, ul li strong a {
-    color: #ff69b4; /* Replace with your actual link color */
+    color: #ff69b4; 
 }
