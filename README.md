@@ -1,3 +1,3 @@
 # anonfrxbt
 
-check https://anonfr.is-a.dev/
+check: https://anonfr.is-a.dev/
