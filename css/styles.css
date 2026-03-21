@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000; 
+    background-color: #000000;
     color: #ffffff;
     line-height: 1.6;
     margin: 0;
-    padding: 40px; 
+    padding: 40px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -17,7 +17,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: right;
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 nav ul li {
@@ -30,17 +30,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    display: inline-block;
-}
-
-.cat-icon {
-    width: 30px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 10px;
 }
 
 h2 {
@@ -48,117 +44,86 @@ h2 {
     margin-top: 30px;
 }
 
-ul {
-    padding-left: 20px;
-}
-
-.friends {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.friends a {
-    background-color: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 0.9em;
-    color: #888;
-}
-
 a {
     color: #ff69b4;
 }
 
-/* Adjust link colors */
-a[href^="https://github.com"] {
+/* Project grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.project-card {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 16px;
+    transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: #ff69b4;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.project-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.project-header h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.project-header h3 a:hover {
     color: #ff69b4;
 }
 
-.crypto-donations {
+.project-source {
+    font-size: 0.8em;
+    color: #666;
+    text-decoration: none;
+}
+
+.project-source:hover {
+    color: #ff69b4;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #aaa;
+    margin: 0 0 12px 0;
+}
+
+.project-tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
+    gap: 6px;
 }
 
-.crypto-option {
-    text-align: center;
-    margin: 10px;
-    max-width: 250px;
+.tag {
+    font-size: 0.75em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #888;
+    border: 1px solid #333;
 }
 
-.qr-code {
-    max-width: 150px;
-    height: auto;
-}
-
-.crypto-address {
-    word-break: break-all;
-    font-size: 0.9em;
-    margin-top: 10px;
-    cursor: pointer;
-    position: relative;
-    padding-right: 25px; 
-}
-
-.copy-icon {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.7;
-}
-
-.crypto-address:hover {
-    text-decoration: underline;
-}
-
-.crypto-address:active {
-    opacity: 0.8;
-}
-
-
-@media (max-width: 768px) {
-    .qr-code {
-        display: none;
-    }
-
-    .crypto-option {
-        max-width: 100%;
-        text-align: left;
-    }
-
-    .crypto-address {
-        font-size: 1.1em; 
-    }
-}
-
-
-@media (min-width: 769px) {
-    .crypto-option {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .crypto-address {
-        font-size: 1em; 
-    }
-}
-
+/* Donate section */
 .support-section {
     background-color: #000000;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .support-toggle {
@@ -191,6 +156,93 @@ a[href^="https://github.com"] {
     transform: rotate(45deg);
 }
 
-ul li strong, ul li strong a {
-    color: #ff69b4; 
+.crypto-donations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.crypto-option {
+    text-align: center;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.qr-code {
+    max-width: 150px;
+    height: auto;
+}
+
+.crypto-address {
+    word-break: break-all;
+    font-size: 0.9em;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+}
+
+.copy-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+.crypto-address:hover {
+    text-decoration: underline;
+}
+
+.crypto-address:active {
+    opacity: 0.8;
+}
+
+.donation-footer {
+    color: #888;
+    font-size: 0.9em;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qr-code {
+        display: none;
+    }
+
+    .crypto-option {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .crypto-address {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 769px) {
+    .crypto-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crypto-address {
+        font-size: 1em;
+    }
 }

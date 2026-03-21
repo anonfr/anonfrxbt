@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnonfrXBT | Code, Crypto, and Chaos</title>
+    <title>AnonfrXBT | Privacy Engineer</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <nav>
             <ul>
                 <li><a href="https://github.com/anonfr" target="_blank">github</a></li>
-                <li><a href="https://x.com/AnonfrXBT" target="_blank"> x </a></li>
+                <li><a href="https://x.com/AnonfrXBT" target="_blank">x</a></li>
                 <li><a href="https://t.me/AnonfrXBT" target="_blank">telegram</a></li>
             </ul>
         </nav>
@@ -19,53 +19,120 @@
 
     <main>
         <h1>hi, im anon</h1>
-        <p>crypto obsessed coder by day, digital asset juggler by night. my brain is 80% blockchain, 19% caffeine, and 1% trying to remember where I left my hardware wallet.</p>
-        <p>when im away from coding, you might catch me:</p>
-        <ul>
-            <li>explaining to grandma why her cat pics aren't automatically NFTs</li>
-            <li>dreaming of ai-powered smart contracts that can do my laundry</li>
-            <li>playing chess</li>
-        </ul>
-        <p>curious about the chaotic beauty of crypto? stalk me on <a href="https://x.com/AnonfrXBT" target="_blank"> x/twitter</a> for a daily dose of blockchain wit, trading "wisdom", and memes</p>
-    </main>
+        <p>i build privacy-preserving systems on ethereum. most of my work revolves around <strong>fully homomorphic encryption</strong> — encrypted payroll, confidential tokens, and making on-chain data actually private.</p>
+        <p>when im not writing solidity, you might find me playing chess or losing track of time reading about cryptography.</p>
 
-    <h2>projects</h2>
-    <p>all of my projects are on <a href="https://github.com/anonfr" target="_blank">github</a> and but most are private.
-    (code visibility is inversely proportional to awesomeness) </p>
-    <p>some interesting projects that are public:</p>
-    <ul>
-        <li><strong><a href="https://anonfr.github.io/BitcoinHalving/" target="_blank">bitcoin halving countdown</a>:</strong> a countdown timer for the next Bitcoin halving event, displaying days, hours, minutes, and seconds until the next halving. It also shows current block reward, next block reward, and other relevant Bitcoin information.</li>
-        <li><strong><a href="https://anonfr.github.io/snake/" target="_blank">anon snake game</a>:</strong> a classic snake game implementation with bull/bear market (aka day/night for normies) mode toggle and no kyc required (we respect your privacy, anon).</li>
-        <li><strong>classified projects:</strong> several ongoing projects in stealth mode, exploring the frontiers of blockchain technology and cryptography. Details are under wraps, but let's just say the future of decentralized systems is looking very interesting...</li>
-        <li><strong>ai-driven smart contract auditor:</strong> a tool in development that uses machine learning to detect vulnerabilities in smart contracts. It's like having a cyber-security expert that never sleeps (and occasionally dreams in code).</li>
-    </ul>
+        <h2>projects</h2>
 
-    <div class="support-section">
-        <h2 class="support-toggle">donate<span class="toggle-icon">+</span></h2>
-        <div class="support-content">
-                <p class="donation-footer"><em>remember: your donation helps maintain my ai that translates my cat's meows into trading signals. early results are purr-omising, you're supporting the next generation of crypto wealth 😽</em></p>
-            <div class="crypto-donations">
-                <div class="crypto-option">
-                    <h3>Bitcoin (BTC)</h3>
-                    <img src="images/btc.png" alt="Bitcoin QR Code" class="qr-code">
-                    <p class="crypto-address" data-address="bc1qhak0scsdkgm3lj35j9r47t0daev6zg9ak4l37v">bc1qhak0scsdkgm3lj35j9r47t0daev6zg9ak4l37v <span class="copy-icon"></span></p>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><a href="https://stealth-salary.vercel.app" target="_blank">StealthSalary</a></h3>
+                    <a href="https://github.com/anonfr/StealthSalary" target="_blank" class="project-source">source</a>
                 </div>
-                <div class="crypto-option">
-                    <h3>Ethereum (ETH)</h3>
-                    <img src="images/eth.png" alt="Ethereum QR Code" class="qr-code">
-                    <p class="crypto-address" data-address="0xa1b763accfd8da3e5f792f351fa5c50c9ce98d31">0xa1b763accfd8da3e5f792f351fa5c50c9ce98d31 <span class="copy-icon"></span></p>
+                <p>fully encrypted on-chain payroll powered by FHE. salaries are stored, computed, and transferred as ciphertexts — no one on the blockchain can ever see compensation data.</p>
+                <div class="project-tags">
+                    <span class="tag">Solidity</span>
+                    <span class="tag">fhEVM</span>
+                    <span class="tag">React</span>
+                    <span class="tag">ERC-7984</span>
                 </div>
-                <div class="crypto-option">
-                    <h3>Solana (SOL)</h3>
-                    <img src="images/sol.png" alt="Solana QR Code" class="qr-code">
-                    <p class="crypto-address" data-address="Fnex7EHoghw6Y4LQYeBPtx5psYn4WBfSHeovM4oJBvRH">Fnex7EHoghw6Y4LQYeBPtx5psYn4WBfSHeovM4oJBvRH <span class="copy-icon"></span></p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><a href="https://github.com/anonfr/ConfidentialToken" target="_blank">ConfidentialToken</a></h3>
+                    <a href="https://github.com/anonfr/ConfidentialToken" target="_blank" class="project-source">source</a>
+                </div>
+                <p>privacy-preserving ERC-20 where balances and transfers are fully encrypted on-chain using Zama's fhEVM. supports permissioned decryption, ZK proofs, and encrypted approvals.</p>
+                <div class="project-tags">
+                    <span class="tag">Solidity</span>
+                    <span class="tag">FHE</span>
+                    <span class="tag">Zama</span>
+                    <span class="tag">Hardhat</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><a href="https://fhe-magic.vercel.app" target="_blank">FHE Playground</a></h3>
+                    <a href="https://github.com/anonfr/fhe" target="_blank" class="project-source">source</a>
+                </div>
+                <p>interactive demo showcasing fully homomorphic encryption concepts — encrypt, compute, and decrypt without ever exposing plaintext.</p>
+                <div class="project-tags">
+                    <span class="tag">FHE</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><a href="https://github.com/anonfr/Sentient-Research" target="_blank">Sentient Research Agent</a></h3>
+                    <a href="https://github.com/anonfr/Sentient-Research" target="_blank" class="project-source">source</a>
+                </div>
+                <p>AI-powered discord bot that does deep research, data analysis, and generates professional reports — all from chat commands.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">Discord</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><a href="https://sharepass-two.vercel.app" target="_blank">SharePass</a></h3>
+                    <a href="https://github.com/anonfr/sharepass" target="_blank" class="project-source">source</a>
+                </div>
+                <p>secure credential sharing app built with TypeScript and Supabase.</p>
+                <div class="project-tags">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Vite</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">Tailwind</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><a href="https://definitelynotascary.vercel.app" target="_blank">definitelynotascary</a></h3>
+                    <a href="https://github.com/anonfr/definitelynotascary" target="_blank" class="project-source">source</a>
+                </div>
+                <p>a psychological thriller website. enter at your own risk.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Web</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <h2 class="support-toggle">donate<span class="toggle-icon">+</span></h2>
+            <div class="support-content">
+                <p class="donation-footer"><em>your donation helps maintain my ai that translates my cat's meows into trading signals. early results are purr-omising 😽</em></p>
+                <div class="crypto-donations">
+                    <div class="crypto-option">
+                        <h3>Bitcoin (BTC)</h3>
+                        <img src="images/btc.png" alt="Bitcoin QR Code" class="qr-code">
+                        <p class="crypto-address" data-address="bc1qhak0scsdkgm3lj35j9r47t0daev6zg9ak4l37v">bc1qhak0scsdkgm3lj35j9r47t0daev6zg9ak4l37v <span class="copy-icon"></span></p>
+                    </div>
+                    <div class="crypto-option">
+                        <h3>Ethereum (ETH)</h3>
+                        <img src="images/eth.png" alt="Ethereum QR Code" class="qr-code">
+                        <p class="crypto-address" data-address="0xa1b763accfd8da3e5f792f351fa5c50c9ce98d31">0xa1b763accfd8da3e5f792f351fa5c50c9ce98d31 <span class="copy-icon"></span></p>
+                    </div>
+                    <div class="crypto-option">
+                        <h3>Solana (SOL)</h3>
+                        <img src="images/sol.png" alt="Solana QR Code" class="qr-code">
+                        <p class="crypto-address" data-address="Fnex7EHoghw6Y4LQYeBPtx5psYn4WBfSHeovM4oJBvRH">Fnex7EHoghw6Y4LQYeBPtx5psYn4WBfSHeovM4oJBvRH <span class="copy-icon"></span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>© 2024 AnonfrXBT</p>
+        <p>&copy; 2024-2026 AnonfrXBT</p>
     </footer>
 
     <script src="js/script.js"></script>
