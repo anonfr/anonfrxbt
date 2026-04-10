@@ -88,13 +88,21 @@ a {
     color: #ff69b4;
 }
 
-.project-source {
-    font-size: 0.8em;
-    color: #666;
-    text-decoration: none;
+.project-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
-.project-source:hover {
+.project-link {
+    color: #666;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
     color: #ff69b4;
 }
 
