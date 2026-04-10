@@ -20,8 +20,13 @@
     </header>
 
     <main>
-        <h1>hi, im anon</h1>
-        <p>onchain sleuth and crypto trader on <a href="https://x.com/AnonfrXBT" target="_blank">x</a>. by night i build privacy infrastructure on ethereum — FHE-encrypted payroll, confidential tokens, the works. believer that blockchains should be transparent by choice, not by default.</p>
+        <div class="intro">
+            <img src="anonfrxbt.jpeg" alt="AnonfrXBT" class="avatar">
+            <div>
+                <h1>hi, im anon</h1>
+                <p>onchain sleuth and crypto trader on <a href="https://x.com/AnonfrXBT" target="_blank">x</a>. by night i build privacy infrastructure on ethereum — FHE-encrypted payroll, confidential tokens, the works. believer that blockchains should be transparent by choice, not by default.</p>
+            </div>
+        </div>
 
         <h2>projects</h2>
 
@@ -143,6 +148,19 @@
             </div>
         </div>
 
+        <div class="verify-section">
+            <h2 class="verify-toggle">verify me<span class="toggle-icon">+</span></h2>
+            <div class="verify-content">
+                <p class="verify-note">use this PGP public key to verify signed messages from me or send encrypted communications.</p>
+                <pre class="pgp-key">-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+REPLACE_WITH_YOUR_ACTUAL_PGP_PUBLIC_KEY
+
+-----END PGP PUBLIC KEY BLOCK-----</pre>
+                <button class="copy-pgp">copy key</button>
+            </div>
+        </div>
+
         <div class="support-section">
             <h2 class="support-toggle">donate<span class="toggle-icon">+</span></h2>
             <div class="support-content">
@@ -171,6 +189,24 @@
     <footer>
         <p>&copy; 2024-2026 AnonfrXBT</p>
     </footer>
+
+    <div id="terminal-overlay" class="terminal-overlay hidden">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">anon@stealth:~</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div id="terminal-output"></div>
+                <div class="terminal-input-line">
+                    <span class="terminal-prompt">anon@stealth:~$&nbsp;</span>
+                    <input type="text" id="terminal-input" class="terminal-input" autofocus spellcheck="false">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
     <script src="js/oneko.js"></script>
